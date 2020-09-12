@@ -11,7 +11,7 @@ let s:update = "update | w |"
 call quickui#menu#clear('P&roject')
 call quickui#menu#install('P&roject', [
             \ [ '&build', s:update . 'call HTerminal(0.4, 300.0, "stack build \n")' ],
-            \ [ '&run', s:update . 'call HTerminal(0.4, 300.0, "stack exec words-exe \n")' ],
+            \ [ '&run', s:update . 'call HTerminal(0.4, 300.0, "stack exec words \n")' ],
             \ [ '&clean', s:update . 'call HTerminal(0.4, 300.0, "stack clean \n")' ],
             \ [ '&test', s:update . 'call HTerminal(0.4, 300.0, "clear; stack test \n")' ],
             \ [ "--", '' ],
